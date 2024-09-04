@@ -8,7 +8,8 @@ const model = (body, id = nextID++) => {
         body.matricula != undefined &&
         body.curso != "" &&
         body.curso != undefined &&
-        body.ano != undefined
+        body.ano != undefined &&
+        !isNaN(Number(body.ano))
     ) {
         return {
             id,
