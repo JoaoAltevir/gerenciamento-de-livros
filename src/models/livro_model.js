@@ -8,7 +8,8 @@ const model = (body, id = nextID++) => {
         body.autor != undefined &&
         body.genero != "" &&
         body.genero != undefined &&
-        body.ano != undefined
+        body.ano != undefined &&
+        !isNaN(Number(body.ano))
     ) {
         return {
             id,
