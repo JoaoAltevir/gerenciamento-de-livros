@@ -13,7 +13,7 @@ const model = (body, id = nextID++) => {
             id,
             idLivro: body.idLivro,
             idEstudante: body.idEstudante,
-            data_aluguel: body.dataAluguel
+            dataAluguel: body.dataAluguel
         }
     }
     return
