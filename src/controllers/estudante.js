@@ -1,5 +1,5 @@
 const db = [];
-const model = require("../models/livro_model");
+const model = require("../models/estudante_model.js");
 
 const store = body => {
     const novo = model(body);
